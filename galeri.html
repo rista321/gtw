@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galeri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background-color: #fafafa;
+        }
+        header {
+            background-color: #8e44ad;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #732d91;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #5e2670;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #4b0082;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 20px;
+        }
+        .gallery-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            height: 180px;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+        .caption {
+            padding: 15px;
+            font-weight: bold;
+            color: #4b0082;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Galeri Proyek Kami</h1>
+        <p>Contoh hasil karya dan proyek digital kami</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="layanan.html">Layanan Kami</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+
+    <section>
+        <h2>Galeri</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/400x180?text=Desain+Logo" alt="Desain Logo" />
+                <div class="caption">Desain Logo Kreatif</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/400x180?text=Website+Perusahaan" alt="Website Perusahaan" />
+                <div class="caption">Website Perusahaan</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/400x180?text=Kampanye+Digital" alt="Kampanye Digital" />
+                <div class="caption">Kampanye Digital Marketing</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/400x180?text=Brosur+Promosi" alt="Brosur Promosi" />
+                <div class="caption">Brosur Promosi</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/400x180?text=Aplikasi+Mobile" alt="Aplikasi Mobile" />
+                <div class="caption">Pengembangan Aplikasi Mobile</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/400x180?text=Strategi+Branding" alt="Strategi Branding" />
+                <div class="caption">Strategi Branding</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Website Kami. Semua Hak Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
